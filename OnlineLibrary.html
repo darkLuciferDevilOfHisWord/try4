@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online LIbrary</title>
+    <link rel="stylesheet" href="OnlineLibrary.css">
+</head>
+<body>
+    <div class="hidden" id="hidden"></div>
+
+    <header>
+        <div class="navbar">
+            <div class="navbarHeading" id="navbarHeading" onclick="funPage()"><span>&#9776;</span> Jin Library<div></div></div>
+            <div class="navbarSearch"><input type="text" id="search" placeholder="Search..."></div>
+        </div>
+    </header>
+
+    <main class="containerA">
+        <section>
+            <div class="container">
+
+                <div class="subcontainer">
+
+                    <div class="containerHeading"><h1>Add Library Book</h1></div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Name
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="bookName" type="text" placeholder="Book Name" required>
+                        </div>
+                    </div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Author
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="authorName" type="text" placeholder="Author Name" required>
+                        </div>
+                    </div>
+
+                    <div class="containerSelect">
+                        <div class="containerSelectText">
+                            Type
+                        </div>
+                        <div class="containerSelectRadio">
+                            <div>
+                                <input type="radio" name="typeOfBook" id="" checked='ckecked'>&nbsp;&nbsp;Fiction
+                            </div>
+                            <div>
+                                <input type="radio" name="typeOfBook" id="">&nbsp;&nbsp;Computer Programming
+                            </div>
+                            <div>
+                                <input type="radio" name="typeOfBook" id="">&nbsp;&nbsp;Cooking
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="containerAddBook" id="containerAddBook">Add Book</button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <article class="container">
+            <div class="subcontainer">
+                <div class="containerHeading"><h1>Library Books</h1></div>
+                <div class="containerForm articleForm">
+                    <div class="containerFormText articleSubHeading"><b>Name</b></div>
+                    <div class="containerFormText articleSubHeading"><b>Author</b></div>
+                    <div class="containerFormText articleSubHeading"><b>Type</b></div>
+                </div>
+                <div class="containerForm articleForm articleFormEven">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">cooking</div>
+                </div>
+                <div class="containerForm articleForm ">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">cooking</div>
+                </div>
+                <div class="containerForm articleForm articleFormEven">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">cooking</div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    
+    <main class="containerB">
+        <section>
+            <div class="container">
+
+                <div class="subcontainer">
+
+                    <div class="containerHeading"><h1>Issue Library Book</h1></div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Name
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="bookName" type="text" placeholder="Person Name" required>
+                        </div>
+                    </div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Book
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="authorName" type="text" placeholder="Book Name" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="containerAddBook" id="containerAddBook">Issue Book</button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <article class="container">
+            <div class="subcontainer">
+                <div class="containerHeading"><h1>Issued Books</h1></div>
+                <div class="containerForm articleForm">
+                    <div class="containerFormText articleSubHeading"><b>Name</b></div>
+                    <div class="containerFormText articleSubHeading"><b>Book</b></div>
+                    <div class="containerFormText articleSubHeading"><b>Date</b></div>
+                </div>
+                <div class="containerForm articleForm articleFormEven">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">1-july-2020</div>
+                </div>
+                <div class="containerForm articleForm ">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">1-july-2020</div>
+                </div>
+                <div class="containerForm articleForm articleFormEven">
+                    <div class="articledata">harry potter</div>
+                    <div class="articledata">jin parkour</div>
+                    <div class="articledata">1-july-2020</div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    
+    <main class="containerC">
+        <section>
+            <div class="container">
+
+                <div class="subcontainer">
+
+                    <div class="containerHeading"><h1>Return Library Book</h1></div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Name
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="bookName" type="text" placeholder="Person Name" required>
+                        </div>
+                    </div>
+
+                    <div class="containerForm">
+                        <div class="containerFormText">
+                            Book
+                        </div>
+                        <div class="containerFormInput">
+                            <input id="authorName" type="text" placeholder="Book Name" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="containerAddBook" id="containerAddBook">Return Book</button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="threePages1" id="threePage1">
+        <div class="page1 pagea" id="pagea" onclick="funA()">Add Libr</div>
+        <div class="page1 pagea" id="pageb" onclick="funB()">Issue Lib</div>
+        <div class="page1 pagea" id="pagec" onclick="funC()">Return Lib</div>
+    </div>
+    <div class="threePages" id="threePage">
+        <div class="page pagea" id="paged" onclick="funA()">ary Book</div>
+        <div class="page pagea" id="pagee" onclick="funB()">rary Book</div>
+        <div class="page pagea" id="pagef" onclick="funC()">rary Books</div>
+    </div>
+
+    <script src="OnlineLibrary.js"></script>
+</body>
+</html>

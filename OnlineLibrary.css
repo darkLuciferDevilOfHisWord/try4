@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #252323;
+    color: rgb(189, 11, 11);
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbarHeading{
+    font-size: 30px;
+    margin: 1vw;
+    background-color:  rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 4px;
+    box-shadow: 0 0 2px  rgb(189, 11, 11);
+    outline: none;
+    text-align: center;
+    z-index: 1;
+}
+.navbarHeading span{
+    background-color: black;
+}
+.navbarSearch{
+    background-color:  rgb(0, 0, 0);
+}
+.navbarSearch input{
+    margin: .8vw;
+    padding: .2vw;
+    background-color:  rgb(0, 0, 0);
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid  rgb(189, 11, 11);
+    outline: none;
+}
+.navbarSearch input:focus{
+    box-shadow: 0 0 8px white;
+}
+
+@media (orientation:portrait) {
+ 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.navbarHeading{
+    font-size: 30px;
+    margin: 0 10px 5px 0;
+}
+.navbarSearch input{
+    padding: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid  rgb(189, 11, 11);
+    outline: none;
+    width: 50vw;
+}   
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.subcontainer{
+    width: 60vw;
+}
+.containerHeading{
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.containerHeading h1{
+    font-size: 30px;
+    margin: 1vw 0;
+}
+.containerForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 0;
+}
+.containerSelect{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vw 0;
+}
+.containerFormText, .containerSelectText{
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    width: 15vw;
+}
+.containerFormInput input{
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: .5vw;
+    width: 45vw;
+    outline: none;
+}
+.containerFormInput input:focus{
+    box-shadow: 0 0 10px inset white;
+}
+.containerSelectRadio div{
+    margin: .5vw 0;
+}
+.containerAddBook{
+    margin: 1vw 0;
+    padding: .5vw;
+    background-color: black;
+    font-size: 15px;
+    border: 1px solid white;
+    color: white;
+    cursor:not-allowed;
+}
+
+
+@media (orientation:portrait) {
+ 
+.subcontainer{
+    width: 90vw;
+}
+.containerHeading h1{
+    font-size: 28px;
+    margin: 10px 0;
+}
+.containerForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.containerSelect{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.containerFormText, .containerSelectText{
+    font-size: 18px;
+    padding: 0 10px 0 0;
+    width: 25vw;
+}
+.containerFormInput input{
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 13px;
+    padding: 5px;
+    width: 65vw;
+    outline: none;
+}
+.containerFormInput input:focus{
+    box-shadow: 0 0 8px white;
+}
+.containerSelectRadio div{
+    margin: 5px 0;
+}
+.containerAddBook{
+    margin: 10px 0;
+    padding: 5px;
+    background-color: black;
+    font-size: 13px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}  
+}
+
+.articledata, .articleSubHeading{
+    width: 33.33%;
+    text-align: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid gray;
+}
+.articleForm{
+    margin: 0;
+}
+.articleFormEven div{
+    background-color: black;
+}
+
+
+
+.threePages1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 10% 0 0 0;
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    width: 50vw;
+    top: 50vh;
+    left: 0;
+    padding: 2vw;
+    padding-right: 0;
+    animation-name: pageAnimation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    border: 1px solid rgb(189, 11, 11);
+    border-right: none;
+}
+.page1{
+    font-size: 30px;
+    margin: 1vw;
+    padding: .8vw;
+    margin-right: 0;
+    padding-right: 0;
+    background-color: black;
+    text-align: right;
+    border: 2px solid rgb(189, 11, 11);
+    border-right: none;
+    box-shadow:  0 0 20px  rgb(189, 11, 11);
+    cursor: pointer;
+}
+.threePages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0 10% 0 0;
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    width: 50vw;
+    top: 50vh;
+    left: 50vw;
+    padding: 2vw;
+    padding-left: 0;
+    animation-name: pageAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    border: 1px solid rgb(189, 11, 11);
+    border-left: none;
+}
+.page{
+    font-size: 30px;
+    margin: 1vw;
+    padding: .8vw;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: black;
+    text-align: left;
+    border: 2px solid rgb(189, 11, 11);
+    border-left: none;
+    box-shadow:  0 0 20px  rgb(189, 11, 11);
+    cursor: pointer;
+}
+.pagea:hover{
+    animation-name: pagea;
+    animation-duration: 1s;
+}
+
+@keyframes pagea{
+    0%{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    100%{
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+@keyframes pageAnimation1{
+    0%{
+        left: -50vw;
+    }
+    70%{
+        left: 0;
+    }
+    85%{
+        left: -10vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes pageAnimation{
+    0%{
+        left: 100vw;
+    }
+    70%{
+        left: 50vw;
+    }
+    85%{
+        left: 60vw;
+    }
+    100%{
+        left: 50vw;
+    }
+}
+@keyframes pageAnimation1Return{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -50vw;
+    }
+}
+@keyframes pageAnimationReturn{
+    0%{
+        left: 50vw;
+    }
+    100%{
+        left: 100vw;
+    }
+}
+
+@media (orientation:portrait){
+ 
+.threePages1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 10% 0 0 0;
+    background-color: black;
+    height: 55vh;
+    position: absolute;
+    width: 50vw;
+    top: 50vh;
+    left: 0;
+    padding: 20px;
+    padding-right: 0;
+    animation-name: pageAnimation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    border: 1px solid rgb(189, 11, 11);
+    border-right: none;
+}
+.page1{
+    font-size: 25px;
+    margin: 10px;
+    padding: 8px;
+    margin-right: 0;
+    padding-right: 0;
+    background-color: black;
+    text-align: right;
+    border: 1px solid rgb(189, 11, 11);
+    border-right: none;
+    cursor: pointer;
+    box-shadow:  0 0 15px  rgb(189, 11, 11);
+}
+.threePages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0 10% 0 0;
+    background-color: black;
+    height: 55vh;
+    position: absolute;
+    width: 50vw;
+    top: 50vh;
+    left: 50vw;
+    padding: 20px;
+    padding-left: 0;
+    animation-name: pageAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    border: 1px solid rgb(189, 11, 11);
+    border-left: none;
+}
+.page{
+    font-size: 25px;
+    margin: 10px;
+    padding: 8px;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: black;
+    text-align: left;
+    border: 1px solid rgb(189, 11, 11);
+    border-left: none;
+    box-shadow:  0 0 10px  rgb(189, 11, 11);
+    cursor: pointer;
+}   
+}
+
+
+
+
+.hidden{
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+
+.containerB, .containerC{
+    display: none;
+}
